@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffeebeans Technologies</title>
+    <base href="/">
+    <!-- <meta http-equiv="Refresh" content="0;URL=https://coffeebeanstechnologies.com"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            //closing tab
+            // $(window).bind("beforeunload", function() { 
+            //       return confirm("Do you really want to close?"); 
+            //   });
+
+
+            //going out of tab
+
+            //   $(window).blur(function() {
+            //     alert("you really want to leave tab?")
+            // });
+
+
+            //tab change
+
+            // $(window).focus(function() {
+            //   prompt("you really want to leave tab?")
+            // });
+
+
+            // windows key pressed
+
+            //   $(document).keydown(function(e){
+            //    // alert(e.keyCode); // replace "37" below with the windows key code
+            //     if (e.metaKey) {
+            //       return false
+            //       alert("win + G");
+            //     }
+
+            // });
+
+
+
+            // $(document).keydown(function(e){
+            //     console.log(e.key); // replace "37" below with the windows key code
+            //     if (e.keyCode == 91 && e.keyCode == 71) { 
+            //       console.log( "windows + g key pressed" );
+            //       if(e.keyCode == 71){
+            //         console.log( "G key pressed" );
+            //        return false;
+            //       }
+
+            //     }
+            // });
+
+
+            document.addEventListener('DOMContentLoaded', () => {
+                'use strict';
+
+                let buffer = [];
+
+                document.addEventListener('keydown', (event) => {
+                    const charList = 'abcdefghijklmnopqrstuvwxyz0123456789';
+                    const key = event.key.toLowerCase();
+
+                    // we are only interested in alphanumeric keys
+                    if (charList.indexOf(key) === -1) return;
+
+                    buffer.push(key);
+                    console.log(buffer);
+                });
+            });
+
+
+
+            // document.addEventListener('keydown', (event) => {
+            //   const keyName = event.key;
+
+            //   if (event.metaKey) {
+            //     // do not alert when only Control key is pressed.
+            //     return;
+            //   }
+
+            //   if (event.metaKey) {
+            //     // Even though event.key is not 'Control' (e.g., 'a' is pressed),
+            //     // event.ctrlKey may be true if Ctrl key is pressed at the same time.
+            //       alert(`Combination of windows + ${keyName}`);
+
+            //     if (event.keyCode == 71) {
+            //       alert(`Combination of windows + ${keyName}`);
+            //       alert("win + G");
+            //     }
+
+            //   } else {
+            //     alert(`Key pressed ${keyName}`);
+            //   }
+            // }, false);
+
+
+            // $(window).keyup(function(e){
+            //   if(e.keyCode == 44){
+            //    alert("user tried to capture screen");
+            //   }
+
+            // });
+
+
+
+
+        });
+    </script>
+
+    <!-- right click -->
+
+    <!-- <script language=JavaScript>
+    onload=setInterval("window.clipboardData.setData('text','')",2);
+    function clickIE() {
+    if (document.all) {
+    return false;
+    }
+    }
+    function clickNS(e) {
+    if (document.layers||(document.getElementById&&!document.all)) {
+    if (e.which==2||e.which==3) {
+    return false;
+    }
+    }
+    }
+    if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickNS;
+    }
+    else{
+    document.onmouseup=clickNS;
+    document.oncontextmenu=clickIE;
+    }
+    document.oncontextmenu=new Function("return false")
+    </script>
+    
+    <script language="JavaScript1.2">
+    
+    function disableselect(e){
+    return false
+    }
+    
+    function reEnable(){
+    return true
+    }
+    
+    //if IE4+
+    document.onselectstart=new Function ("return false")
+    
+    //if NS6
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+    }
+
+     
+    </script> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="styles.950ac00b379a7ee0ad76.css">
+</head>
+
+
+
+<app-root></app-root>
+
+<!-- <script src="https://s-cirqle-com-promo.s3.amazonaws.com/assets/landing-4f698dac6ee9326f1d1754cd118ddd62.js" type="text/javascript"></script> -->
+<script src="runtime-es2015.ca84bb782683800d794b.js" type="module"></script>
+<script src="polyfills-es2015.1353c8bc84a77160911d.js" type="module"></script>
+<script src="runtime-es5.8f24ffed1c06a6510470.js" nomodule></script>
+<script src="polyfills-es5.58ea80e457fc4c4283fb.js" nomodule></script>
+<script src="scripts.1fa6310ef9b30c5077ec.js"></script>
+<script src="main-es2015.9b5bdf75ad64dccba127.js" type="module"></script>
+<script src="main-es5.e8de5e16f7d190242660.js" nomodule></script>
+</body>
+
+</html>
